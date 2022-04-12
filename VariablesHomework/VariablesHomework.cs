@@ -126,8 +126,8 @@ namespace VariablesHomework
         {
             Assert.IsTrue(int.MaxValue == 2147483647); // Make this pass
             Assert.IsTrue(int.MinValue == -2147483648); // Make this pass
-            //Assert.IsTrue(float.MaxValue == /*Answer here*/); // Make this pass
-            //Assert.IsTrue(float.MinValue == /*Answer here*/); // Make this pass
+            Assert.IsTrue(float.MaxValue == 3.40282347f); // Make this pass
+            //Assert.IsTrue(float.MinValue == -1.11); // Make this pass
             //Assert.IsTrue(double.MaxValue == /*Answer here*/); // Make this pass
             //Assert.IsTrue(double.MinValue == /*Answer here*/); // Make this pass
         }
