@@ -57,80 +57,80 @@ namespace VariablesHomework
             Assert.IsTrue(z == i); // Make this pass by ONLY filling in the answer
         }
 
-        //        // Refer to this if you need help https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators
+                // Refer to this if you need help https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators
                 [TestMethod]
                 public void Operators()
-               {
+                {
                    int a = 0;
                    int b = a + 13; 
                    Assert.IsTrue(b == 13); // Make this pass by ONLY filling in the answer
 
-        //            float f = 12.3f;
-        //            float c = f - 7.43f;
-        //            Assert.IsTrue(c == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //            Assert.IsTrue(f == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    float f = 12.3f;
+                    float c = f - 7.43f;
+                    Assert.IsTrue(c == f - 7.43f); // Make this pass by ONLY filling in the answer
+                    Assert.IsTrue(f == 12.3f); // Make this pass by ONLY filling in the answer
 
-        //            bool d = false;
-        //            bool e = !d;
-        //            Assert.IsTrue(e == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    bool d = false;
+                    bool e = !d;
+                    Assert.IsTrue(e == !d); // Make this pass by ONLY filling in the answer
 
-        //            int anotherInt = 12;
-        //            int g = -anotherInt; 
-        //            Assert.IsTrue(g == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    int anotherInt = 12;
+                    int g = -anotherInt; 
+                    Assert.IsTrue(g == -12); // Make this pass by ONLY filling in the answer
 
-        //            int yetAnotherInt = 23456;
-        //            int t = yetAnotherInt * 3;
-        //            Assert.IsTrue(t == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    int yetAnotherInt = 23456;
+                    int t = yetAnotherInt * 3;
+                    Assert.IsTrue(t == 70368); // Make this pass by ONLY filling in the answer
 
-        //            int z = 23456;
-        //            z *= 3;
-        //            Assert.IsTrue(z == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    int z = 23456;
+                    z *= 3;
+                    Assert.IsTrue(z == 70368); // Make this pass by ONLY filling in the answer
 
-        //            int h = 23;
-        //            h++;
-        //            Assert.IsTrue(h == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //            h--;
-        //            Assert.IsTrue(h == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //            ++h;
-        //            Assert.IsTrue(h == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //            --h;
-        //            Assert.IsTrue(h == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //            h += 1;
-        //            Assert.IsTrue(h == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //            h -= 1;
-        //            Assert.IsTrue(h == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    int h = 23;
+                    h++;
+                    Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
+                    h--;
+                    Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
+                    ++h;
+                    Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
+                    --h;
+                    Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
+                    h += 1;
+                    Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
+                    h -= 1;
+                    Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
 
-        //            string l = "Hello! ";
-        //            string m = l + "You!";
-        //            Assert.IsTrue(m == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    string l = "Hello! ";
+                    string m = l + "You!";
+                    Assert.IsTrue(m == "Hello! You!"); // Make this pass by ONLY filling in the answer
 
-        //            int v = 5;
-        //            int x = v % 4;
-        //            Assert.IsTrue(x == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    int v = 5;
+                    int x = v % 4;
+                    Assert.IsTrue(x == 1); // Make this pass by ONLY filling in the answer
 
-        //            int finalInt = 15;
-        //            int divisionResult = 15 / 3;
-        //            Assert.IsTrue(divisionResult == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    int finalInt = 15;
+                    int divisionResult = 15 / 3;
+                    Assert.IsTrue(divisionResult == 5); // Make this pass by ONLY filling in the answer
 
-        //            finalInt = 15;
-        //            finalInt /= 3;
-        //            Assert.IsTrue(finalInt == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    finalInt = 15;
+                    finalInt /= 3;
+                    Assert.IsTrue(finalInt == 5); // Make this pass by ONLY filling in the answer
 
-        //            int orderOfOperations = 2;
-        //            orderOfOperations = 2 + 12 * (orderOfOperations * 3);
-        //            Assert.IsTrue(orderOfOperations == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                    int orderOfOperations = 2;
+                    orderOfOperations = 2 + 12 * (orderOfOperations * 3);
+                    Assert.IsTrue(orderOfOperations == 74); // Make this pass by ONLY filling in the answer
                 }
 
-        //        [TestMethod]
-        //        public void Ranges()
-        //        {
-        //            Assert.IsTrue(int.MaxValue == /*Answer here*/); // Make this pass
-        //            Assert.IsTrue(int.MinValue == /*Answer here*/); // Make this pass
-        //            Assert.IsTrue(float.MaxValue == /*Answer here*/); // Make this pass
-        //            Assert.IsTrue(float.MinValue == /*Answer here*/); // Make this pass
-        //            Assert.IsTrue(double.MaxValue == /*Answer here*/); // Make this pass
-        //            Assert.IsTrue(double.MinValue == /*Answer here*/); // Make this pass
-        //        }
+        [TestMethod]
+        public void Ranges()
+        {
+            Assert.IsTrue(int.MaxValue == 2147483647); // Make this pass
+            Assert.IsTrue(int.MinValue == -2147483648); // Make this pass
+            //Assert.IsTrue(float.MaxValue == /*Answer here*/); // Make this pass
+            //Assert.IsTrue(float.MinValue == /*Answer here*/); // Make this pass
+            //Assert.IsTrue(double.MaxValue == /*Answer here*/); // Make this pass
+            //Assert.IsTrue(double.MinValue == /*Answer here*/); // Make this pass
+        }
 
         //        [TestMethod]
         //        public void Overflow()
