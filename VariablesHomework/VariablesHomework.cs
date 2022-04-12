@@ -58,12 +58,12 @@ namespace VariablesHomework
         }
 
         //        // Refer to this if you need help https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators
-        //        [TestMethod]
-        //        public void Operators()
-        //        {
-        //            int a = 0;
-        //            int b = a + 13; 
-        //            Assert.IsTrue(b == /*Answer here*/); // Make this pass by ONLY filling in the answer
+                [TestMethod]
+                public void Operators()
+               {
+                   int a = 0;
+                   int b = a + 13; 
+                   Assert.IsTrue(b == 13); // Make this pass by ONLY filling in the answer
 
         //            float f = 12.3f;
         //            float c = f - 7.43f;
@@ -119,7 +119,7 @@ namespace VariablesHomework
         //            int orderOfOperations = 2;
         //            orderOfOperations = 2 + 12 * (orderOfOperations * 3);
         //            Assert.IsTrue(orderOfOperations == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //        }
+                }
 
         //        [TestMethod]
         //        public void Ranges()
@@ -177,5 +177,4 @@ namespace VariablesHomework
         //            int b = int.Parse(a);
         //            Assert.IsTrue(b == /*Answer here*/); // Make this pass by ONLY filling in the answer
     }
-}
 }
