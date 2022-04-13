@@ -57,69 +57,69 @@ namespace VariablesHomework
             Assert.IsTrue(z == i); // Make this pass by ONLY filling in the answer
         }
 
-                // Refer to this if you need help https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators
-                [TestMethod]
-                public void Operators()
-                {
-                   int a = 0;
-                   int b = a + 13; 
-                   Assert.IsTrue(b == 13); // Make this pass by ONLY filling in the answer
+        // Refer to this if you need help https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators
+        [TestMethod]
+        public void Operators()
+        {
+            int a = 0;
+            int b = a + 13;
+            Assert.IsTrue(b == 13); // Make this pass by ONLY filling in the answer
 
-                    float f = 12.3f;
-                    float c = f - 7.43f;
-                    Assert.IsTrue(c == f - 7.43f); // Make this pass by ONLY filling in the answer
-                    Assert.IsTrue(f == 12.3f); // Make this pass by ONLY filling in the answer
+            float f = 12.3f;
+            float c = f - 7.43f;
+            Assert.IsTrue(c == f - 7.43f); // Make this pass by ONLY filling in the answer
+            Assert.IsTrue(f == 12.3f); // Make this pass by ONLY filling in the answer
 
-                    bool d = false;
-                    bool e = !d;
-                    Assert.IsTrue(e == !d); // Make this pass by ONLY filling in the answer
+            bool d = false;
+            bool e = !d;
+            Assert.IsTrue(e == !d); // Make this pass by ONLY filling in the answer
 
-                    int anotherInt = 12;
-                    int g = -anotherInt; 
-                    Assert.IsTrue(g == -12); // Make this pass by ONLY filling in the answer
+            int anotherInt = 12;
+            int g = -anotherInt;
+            Assert.IsTrue(g == -12); // Make this pass by ONLY filling in the answer
 
-                    int yetAnotherInt = 23456;
-                    int t = yetAnotherInt * 3;
-                    Assert.IsTrue(t == 70368); // Make this pass by ONLY filling in the answer
+            int yetAnotherInt = 23456;
+            int t = yetAnotherInt * 3;
+            Assert.IsTrue(t == 70368); // Make this pass by ONLY filling in the answer
 
-                    int z = 23456;
-                    z *= 3;
-                    Assert.IsTrue(z == 70368); // Make this pass by ONLY filling in the answer
+            int z = 23456;
+            z *= 3;
+            Assert.IsTrue(z == 70368); // Make this pass by ONLY filling in the answer
 
-                    int h = 23;
-                    h++;
-                    Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
-                    h--;
-                    Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
-                    ++h;
-                    Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
-                    --h;
-                    Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
-                    h += 1;
-                    Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
-                    h -= 1;
-                    Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
+            int h = 23;
+            h++;
+            Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
+            h--;
+            Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
+            ++h;
+            Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
+            --h;
+            Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
+            h += 1;
+            Assert.IsTrue(h == 24); // Make this pass by ONLY filling in the answer
+            h -= 1;
+            Assert.IsTrue(h == 23); // Make this pass by ONLY filling in the answer
 
-                    string l = "Hello! ";
-                    string m = l + "You!";
-                    Assert.IsTrue(m == "Hello! You!"); // Make this pass by ONLY filling in the answer
+            string l = "Hello! ";
+            string m = l + "You!";
+            Assert.IsTrue(m == "Hello! You!"); // Make this pass by ONLY filling in the answer
 
-                    int v = 5;
-                    int x = v % 4;
-                    Assert.IsTrue(x == 1); // Make this pass by ONLY filling in the answer
+            int v = 5;
+            int x = v % 4;
+            Assert.IsTrue(x == 1); // Make this pass by ONLY filling in the answer
 
-                    int finalInt = 15;
-                    int divisionResult = 15 / 3;
-                    Assert.IsTrue(divisionResult == 5); // Make this pass by ONLY filling in the answer
+            int finalInt = 15;
+            int divisionResult = 15 / 3;
+            Assert.IsTrue(divisionResult == 5); // Make this pass by ONLY filling in the answer
 
-                    finalInt = 15;
-                    finalInt /= 3;
-                    Assert.IsTrue(finalInt == 5); // Make this pass by ONLY filling in the answer
+            finalInt = 15;
+            finalInt /= 3;
+            Assert.IsTrue(finalInt == 5); // Make this pass by ONLY filling in the answer
 
-                    int orderOfOperations = 2;
-                    orderOfOperations = 2 + 12 * (orderOfOperations * 3);
-                    Assert.IsTrue(orderOfOperations == 74); // Make this pass by ONLY filling in the answer
-                }
+            int orderOfOperations = 2;
+            orderOfOperations = 2 + 12 * (orderOfOperations * 3);
+            Assert.IsTrue(orderOfOperations == 74); // Make this pass by ONLY filling in the answer
+        }
 
         [TestMethod]
         public void Ranges()
@@ -135,9 +135,9 @@ namespace VariablesHomework
         [TestMethod]
         public void Overflow()
         {
-            unchecked // ignore this, it simple means im telling the compiler i know what I am doing.
+            unchecked // ignore this, it simply means i'm telling the compiler i know what I am doing.
             {
-                //Assert.IsTrue(int.MaxValue + 1 == 2147483648); // Make this pass (you can use a literal number or a symbol)
+                Assert.IsTrue(int.MaxValue + 1 == 2147483648); // Make this pass (you can use a literal number or a symbol)
                 //Assert.IsTrue(int.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
                 //Assert.IsTrue(float.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
                 //Assert.IsTrue(float.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
@@ -153,28 +153,30 @@ namespace VariablesHomework
             double d = i;
             Assert.IsTrue(d == 13.0); // Make this pass by ONLY filling in the answer
 
-            //Why does that compile and work but this doesnt ? (Add a comment with your answer)
+            //Why does that compile and work, but this doesn't? (Add a comment with your answer)
             //double d = 15.5;
-            int c = (int)(double) d; // lack of cast, loss of data
+            int c = (int)(double)d; // lack of cast, loss of data
         }
 
-        //        [TestMethod]
-        //        public void Casting()
-        //        {
-        //            // what am i doing here that make the above work? (Add a comment with your answer)
-        //            double d = 15.5;
-        //            int c = (int)d;
-        //            Assert.IsTrue(c == /*Answer here*/); // Make this pass by ONLY filling in the answer
+        [TestMethod]
+        public void Casting()
+        {
+            // what am i doing here that made the above work? (Add a comment with your answer)
+            double d = 15.5;
+            int c = (int)d; //casting
+            Assert.IsTrue(c == 15); // Make this pass by ONLY filling in the answer
 
-        //            string e = d.ToString();
-        //            Assert.IsTrue(e == /*Answer here*/); // Make this pass by ONLY filling in the answer
-        //        }
+            string e = d.ToString();
+            Assert.IsTrue(e == "15.5"); // Make this pass by ONLY filling in the answer
+        }
 
-        //        [TestMethod]
-        //        public void Parsing()
-        //        {
-        //            string a = "67";
-        //            int b = int.Parse(a);
-        //            Assert.IsTrue(b == /*Answer here*/); // Make this pass by ONLY filling in the answer
-    }
+        [TestMethod]
+        public void Parsing()
+        {
+            string a = "67";
+            int b = int.Parse(a);
+            Assert.IsTrue(b == 67); // Make this pass by ONLY filling in the answer
+        }
+    } 
 }
+
