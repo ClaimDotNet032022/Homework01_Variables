@@ -126,37 +126,37 @@ namespace VariablesHomework
         {
             Assert.IsTrue(int.MaxValue == 2147483647); // Make this pass
             Assert.IsTrue(int.MinValue == -2147483648); // Make this pass
-            Assert.IsTrue(float.MaxValue == 3.40282347f); // Make this pass
-            //Assert.IsTrue(float.MinValue == -1.11); // Make this pass
-            //Assert.IsTrue(double.MaxValue == /*Answer here*/); // Make this pass
-            //Assert.IsTrue(double.MinValue == /*Answer here*/); // Make this pass
+            Assert.IsTrue(float.MaxValue == 3.402823466e+38f); // Make this pass
+            Assert.IsTrue(float.MinValue == -3.40282347E+38f); // Make this pass
+            Assert.IsTrue(double.MaxValue == 1.7976931348623158e+308); // Make this pass
+            Assert.IsTrue(double.MinValue == -1.7976931348623158e+308); // Make this pass
         }
 
-        //        [TestMethod]
-        //        public void Overflow()
-        //        {
-        //            unchecked // ignore this, it simple means im telling the compiler i know what I am doing.
-        //            {
-        //                Assert.IsTrue(int.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-        //                Assert.IsTrue(int.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-        //                Assert.IsTrue(float.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-        //                Assert.IsTrue(float.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-        //                Assert.IsTrue(double.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-        //                Assert.IsTrue(double.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-        //            }
-        //        }
+        [TestMethod]
+        public void Overflow()
+        {
+            unchecked // ignore this, it simple means im telling the compiler i know what I am doing.
+            {
+                //Assert.IsTrue(int.MaxValue + 1 == 2147483648); // Make this pass (you can use a literal number or a symbol)
+                //Assert.IsTrue(int.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
+                //Assert.IsTrue(float.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
+                //Assert.IsTrue(float.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
+                //Assert.IsTrue(double.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
+                //Assert.IsTrue(double.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
+            }
+        }
 
-        //        [TestMethod]
-        //        public void Conversion()
-        //        {
-        //            int i = 13;
-        //            double d = i;
-        //            Assert.IsTrue(d == /*Answer here*/); // Make this pass by ONLY filling in the answer
+        [TestMethod]
+        public void Conversion()
+        {
+            int i = 13;
+            double d = i;
+            Assert.IsTrue(d == 13.0); // Make this pass by ONLY filling in the answer
 
-        //            // Why does that compile andwork but this doesnt? (Add a comment with your answer)
-        //            // double d = 15.5;
-        //            // int c = d;
-        //        }
+            //Why does that compile and work but this doesnt ? (Add a comment with your answer)
+            //double d = 15.5;
+            int c = (int)(double) d; // lack of cast, loss of data
+        }
 
         //        [TestMethod]
         //        public void Casting()
