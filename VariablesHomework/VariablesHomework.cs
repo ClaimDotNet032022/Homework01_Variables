@@ -127,7 +127,7 @@ namespace VariablesHomework
             Assert.IsTrue(int.MaxValue == 2147483647); // Make this pass
             Assert.IsTrue(int.MinValue == -2147483648); // Make this pass
             Assert.IsTrue(float.MaxValue == 3.402823466e+38f); // Make this pass
-            Assert.IsTrue(float.MinValue == -3.40282347E+38f); // Make this pass
+            Assert.IsTrue(float.MinValue == -3.40282347e+38f); // Make this pass
             Assert.IsTrue(double.MaxValue == 1.7976931348623158e+308); // Make this pass
             Assert.IsTrue(double.MinValue == -1.7976931348623158e+308); // Make this pass
         }
@@ -135,14 +135,14 @@ namespace VariablesHomework
         [TestMethod]
         public void Overflow()
         {
-            unchecked // ignore this, it simply means i'm telling the compiler i know what I am doing.
+            unchecked // ignore this, it simply means i'm telling the compiler i know what I am doing. //this is bizarre. it's like this data is conceptually circular to the program.
             {
-                Assert.IsTrue(int.MaxValue + 1 == 2147483648); // Make this pass (you can use a literal number or a symbol)
-                //Assert.IsTrue(int.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-                //Assert.IsTrue(float.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-                //Assert.IsTrue(float.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-                //Assert.IsTrue(double.MaxValue + 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
-                //Assert.IsTrue(double.MinValue - 1 == /*Answer here*/); // Make this pass (you can use a literal number or a symbol)
+                Assert.IsTrue(int.MaxValue + 1 == -2147483648); // Make this pass (you can use a literal number or a symbol)
+                Assert.IsTrue(int.MinValue - 1 == 2147483647); // Make this pass (you can use a literal number or a symbol)
+                Assert.IsTrue(float.MaxValue + 1 == 3.402823466e+38f + 1); // Make this pass (you can use a literal number or a symbol)
+                Assert.IsTrue(float.MinValue - 1 == -3.40282347e+38f - 1); // Make this pass (you can use a literal number or a symbol)
+                Assert.IsTrue(double.MaxValue + 1 == 1.7976931348623158e+308 + 1); // Make this pass (you can use a literal number or a symbol)
+                Assert.IsTrue(double.MinValue - 1 == -1.7976931348623158e+308 - 1); // Make this pass (you can use a literal number or a symbol)
             }
         }
 
