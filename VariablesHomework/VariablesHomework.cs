@@ -23,46 +23,52 @@ namespace VariablesHomework
             Assert.IsTrue(words == "I am a programmer now"); // Make this pass without changing this statement
             Assert.IsTrue(character == 'z'); // Make this pass without changing this statement
         }
+
+        [TestMethod]
+        public void Assignment()
+        {
+            int i = 25;
+            Assert.IsTrue(i == 25); // Make this pass without changing this statement (add or modify a statement above to make it pass)
+            i = 100;
+            Assert.IsTrue(i == 100); // Then make this pass without changing this statement
+
+            float f = 3.5f;            
+            Assert.IsTrue(f == 3.5); // Make this pass without changing this statement (except you might need to add something)
+
+            f = 99.9f;
+            Assert.IsTrue(f == 99.9); // Then make this pass without changing this statement (except you might need to add something)
+
+            bool b = false;
+            Assert.IsTrue(b); // Make this pass without changing this statement
+
+            Assert.IsTrue(b == false); // Then make this pass without changing this statement
+
+            double d = 0.0d;
+            d = 10.0;
+            d = 20.0;
+            Assert.IsTrue(d == 10.0); // Make this pass without changing this statement
+            d = 20.0;
+            Assert.IsTrue(d == 20.0); // Then make this pass without changing this statement
+
+
+            string s = "word";
+            s = "word";
+            Assert.IsTrue(s == "word"); // Make this pass without changing this statement
+
+            Assert.IsTrue(s == "next"); // Then make this pass without changing this statement
+
+            char c = 'a';
+            c = 'b';
+            c = 'c';
+            Assert.IsTrue(c == 'b'); // Make this pass without changing this statement
+
+            Assert.IsTrue(c == 'c'); // Then make this pass without changing this statement
+
+            int z = i;
+            Assert.IsTrue(z == i); // Make this pass by ONLY filling in the answer
+        }
     }
 }
-
-//        [TestMethod]
-//        public void Assignment()
-//        {
-//            int i = 0;
-//            Assert.IsTrue(i == 25); // Make this pass without changing this statement (add or modify a statement above to make it pass)
-
-//            Assert.IsTrue(i == 100); // Then make this pass without changing this statement
-
-//            float f = 0.0f;
-//            Assert.IsTrue(f == 3.5); // Make this pass without changing this statement (except you might need to add something)
-
-//            Assert.IsTrue(f == 99.9); // Then make this pass without changing this statement (except you might need to add something)
-
-//            bool b = false;
-//            Assert.IsTrue(b); // Make this pass without changing this statement
-
-//            Assert.IsTrue(b == false); // Then make this pass without changing this statement
-
-//            double d = 0.0;
-//            Assert.IsTrue(d == 10.0); // Make this pass without changing this statement
-
-//            Assert.IsTrue(d == 20.0); // Then make this pass without changing this statement
-
-
-//            string s = "";
-//            Assert.IsTrue(s == "word"); // Make this pass without changing this statement
-
-//            Assert.IsTrue(s == "next"); // Then make this pass without changing this statement
-
-//            char c = 'a';
-//            Assert.IsTrue(c == 'b'); // Make this pass without changing this statement
-
-//            Assert.IsTrue(c == 'c'); // Then make this pass without changing this statement
-
-//            int z = i;
-//            Assert.IsTrue(z == /*Answer here*/); // Make this pass by ONLY filling in the answer
-//        }
 
 //        // Refer to this if you need help https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators
 //        [TestMethod]
