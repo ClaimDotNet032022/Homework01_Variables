@@ -28,37 +28,37 @@ namespace VariablesHomework
         public void Assignment()
         {
             int i = 25;
-            i = 100;
             Assert.IsTrue(i == 25); // Make this pass without changing this statement (add or modify a statement above to make it pass)
+            i = 100;
             Assert.IsTrue(i == 100); // Then make this pass without changing this statement
 
             float f = 3.5f;
-            f = 99.9f;
             Assert.IsTrue(f == 3.5); // Make this pass without changing this statement (except you might need to add something)
+            f = 99.9f;
             Assert.IsTrue(f == 99.9); // Then make this pass without changing this statement (except you might need to add something)
 
             bool b = false;
             Assert.IsTrue(b); // Make this pass without changing this statement
+            b = false;
             Assert.IsTrue(b == false); // Then make this pass without changing this statement
 
-            double d = 0.0d;
-            d = 10.0;
-            d = 20.0;
+            double d = 10.0d;
             Assert.IsTrue(d == 10.0); // Make this pass without changing this statement
+            d = 20.0;
             Assert.IsTrue(d == 20.0); // Then make this pass without changing this statement
 
 
             string s = "word";
-            s = "next";
             Assert.IsTrue(s == "word"); // Make this pass without changing this statement
+            s = "next";
             Assert.IsTrue(s == "next"); // Then make this pass without changing this statement
 
-            char c = 'a';
-            c = 'b';
-            c = 'c';
+                       
+            char c = 'b';    
             Assert.IsTrue(c == 'b'); // Make this pass without changing this statement
+            c = 'c';
             Assert.IsTrue(c == 'c'); // Then make this pass without changing this statement
-
+            
             int z = i;
             Assert.IsTrue(z == i); // Make this pass by ONLY filling in the answer
         }
