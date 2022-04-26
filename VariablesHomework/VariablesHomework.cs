@@ -12,7 +12,7 @@ namespace VariablesHomework
             bool boolean = true;
             double decimalValue = 99.9;
             float floatingDecimalValue = 25.4f;
-            string words = "I am a programer now";
+            string words = "I am a programmer now";
             char character = 'z';
             Assert.IsTrue(number == 25); // Make this pass without changing this statement (add other statements before or after to make it pass)
             Assert.IsTrue(boolean == true); // Make this pass without changing this statement
